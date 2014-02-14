@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="shortcut icon" href="img/pete.ico"/>
+<link type="text/plain" rel="author" href="humans.txt"/>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="js/validetta/validetta.css">
+<!--[if lt IE 9]>
+   	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+<style type="text/css">
+</style>
+<title>FlatLgn</title>
+</head>
+<body>
+<div class="container">
+	<h1 class="bigtitle">FlatLgn</h1>
+	<div class="login">
+		<h2 class="sub-title">Şifremi Unuttum</h2>
+		<form method="POST" id="password-form">
+			<p>
+				<input type="text" required placeholder="E-Mail" id="ka">
+			</p>
+			<div class="clearfix">
+			</div>
+			<p class="gi">
+				<button type="submit" class="g-but" type="button" title="Giriş">Gönder</button>
+			</p>
+		</form>
+	</div>
+	<div class="gb">
+		<a href="index.html"><img src="img/goback.png" class="gbi" width="32" height="32" title="Geri" alt="Geri"></a>
+	</div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/preload.js"></script>
+<script type="text/javascript">
+	// Animate
+	$('.bigtitle').addClass('animated fadeInLeft');
+	$('.sub-title').addClass('animated fadeInLeft');
+	$('.login').addClass('animated fadeInLeft');
+	$('.gb').addClass('animated fadeInLeft');
+</script>
+<script type="text/javascript">
+	// Focus
+	$( document ).ready(function() {
+	$( "#ka" ).focus();
+	});
+</script>
+</body>
+</html>
