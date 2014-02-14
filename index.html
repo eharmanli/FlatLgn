@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="shortcut icon" href="img/pete.ico" width="16" height="16" alt="fav" title="fav"/>
+<link type="text/plain" rel="author" href="humans.txt" />
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="js/valid8/screen.css">
+<!--[if lt IE 9]>
+   	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+<style type="text/css">
+</style>
+<title>FlatLgn</title>
+</head>
+<body>
+<div class="container">
+	<h1 class="bigtitle">FlatLgn</h1>
+	<div class="login">
+		<h2 class="sub-title">Hoş Geldiniz</h2>
+		<form action="" method="POST" id="login-form">
+			<p>
+				<input type="text" required placeholder="Kullanıcı adı" id="ka">
+			</p>
+			<p>
+				<input type="password" required placeholder="Parola" id="pa">
+			</p>
+			<p class="re-me pull-left">
+				<label><input id="rememberme" name="rememberme" value="remember" type="checkbox"/> Beni Unutma!</label>
+			</p>
+			<p class="si pull-right">
+				<a href="sifremi-unuttum.html">Şifremi Unuttum</a>
+			</p>
+			<div class="clearfix">
+			</div>
+			<p class="gi">
+				<button type="submit" class="g-but" title="Giriş">Giriş</button>
+			</p>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	// Animate
+	$('.bigtitle').addClass('animated fadeInLeft');
+	$('.sub-title').addClass('animated fadeInLeft');
+	$('.login').addClass('animated fadeInLeft');
+</script>
+<script type="text/javascript">
+	// Focus
+	$( document ).ready(function() {
+	$( "#ka" ).focus();
+	});
+</script>
+</body>
+</html>
